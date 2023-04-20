@@ -1,2 +1,2 @@
 # AIR-Jordan-Copy
-air-jordan-copy.netlify.app
+https://air-jordan-copy.netlify.app/
