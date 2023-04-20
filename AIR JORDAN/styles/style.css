@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: var(--color-txt);
+    background-color: var(--color-bg);
+    font-family: 'Montserrat', sans-serif;
+}
+html.light{
+    --color-bg: #FFFFFF;
+    --color-txt: #000000;
+    --color-img: #000000;
+    --color-button: #000000;
+    --color-button-txt: #FFFFFF;
+}
+html.dark{
+    --color-bg: #121212;
+    --color-txt: #FFFFFF;
+    --color-img: #FFFFFF;
+    --color-button: #FFFFFF;
+    --color-button-txt: #121212;
+}
+.main-wrap{
+    margin: 50px 141px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 154px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style-type: none;
+} 
+.nav ul li:not(:first-child) {
+    margin-left: 50px;
+}
+.nav ul li a{
+    color: var(--color-txt);
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-decoration: underline;
+    transition: .3s;
+}
+.logo{
+    text-align: center;
+}
+.logo p{
+    color: #BDBDBD80;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+.logo p span{
+    color: var(--color-txt);
+}
+.src{
+    display: flex;
+    justify-content: space-between;
+}
+.src a img{
+    margin-left: 50px;
+    color: var(--color-img);
+}
+.main{
+    display: flex;
+    margin-left: 90px;
+    margin-bottom: 74px;
+}
+.hero{
+    width: 40%;
+    margin-top: 97px;
+}
+.hero h2{
+    color: #BDBDBD;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2px;
+    letter-spacing: 0.03em;
+}
+.hero h1{
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+    margin-bottom: 30px;
+}
+.hero h3{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 30px;
+}
+.hero p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 20px;
+}
+.hero-text{
+    width: 70%;
+}
+.img-wrap{
+    width: 60%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.them-change, .lang-change{
+    padding-top: 50px;
+}
+.them-change{
+    display: flex;
+    align-items: center;
+}
+.them-change input[type='checkbox']{
+    width: 64px;
+    height: 32px;
+    appearance: none;
+    background: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 20px;
+}
+.them-change input:checked[type='checkbox']{
+    background: #000000;
+}
+.them-change input[type='checkbox']::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    top: 50%;
+    background: #000000;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    margin: auto;
+    left: 15px;
+}
+.them-change input:checked[type='checkbox']::before{
+    background: #FFFFFF;
+    left: 45px;
+}
+.them-change p{
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+.buy{
+    text-align: center;
+}
+.buy h2{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+.buy a{
+    display: block;
+    padding: 16px 77px;
+    color: var(--color-button-txt);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    background: var(--color-button);
+    border-radius: 17px;
+    text-decoration: none;
+}
+.lang-change{
+    display: flex;
+    align-items: center;
+}
+.lang-change p{
+    color: var(--color-txt);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+.lang-change-active{
+    color: var(--color-txt);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+.lang-change-not-active{
+    color: #BDBDBD;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+/* Adaptive */
+@media (max-width:1200px){
+    .main-wrap{
+        margin: 50px 50px;
+    }
+    .hero{
+        width: 60%;
+    }
+    .hero h2{
+        font-size: 1.2rem;
+        line-height: 1.7px;
+    }
+    .hero h1{
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+    }
+    .hero h3{
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    .hero-text p{
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .hero-text{
+        width: 100%;
+    }
+    .img-wrap img{
+        height: 100%;
+        width: 100%;
+        margin-left: -10%;
+    }
+}
+@media (max-width:1200px){
+    .main{
+        margin-left: 50px;
+    }
+    .hero{
+        width: 60%;
+    }
+    .hero h2{
+        font-size: 1.5rem;
+        line-height: 1.5px;
+    }
+    .hero h1{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .hero h3{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .hero-text p{
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}
+@media (max-width:992px){
+    /*  */
+}
+@media (max-width:768px){
+    .main-wrap{
+        margin: 50px 30px;
+    }
+    .nav ul li:not(:first-child){
+        margin-left: 25px;
+    }
+    .nav ul li:last-child{
+        margin-right: 25px;
+    }
+    .src a img{
+        margin-left: 40px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .hero{
+        width: 100%;
+        order: 2;
+    }
+    .img-wrap{
+        width: 100%;
+        order: 1;
+    }
+}
+@media (max-width:567px){
+    .main-wrap{
+        margin: 50px 30px;
+    }
+    .nav ul li:not(:first-child){
+        margin-left: 15px;
+    }
+    .nav ul li:last-child{
+        margin-right: 15px;
+    }
+    .src a img{
+        margin-left: 30px;
+    }
+    .them-change input[type='checkbox']{
+        margin-right: 10px;
+    }
+}
+@media (max-width:390px){
+    .main-wrap{
+        margin: 50px 20px;
+    }
+    .header{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .nav, .src, .logo{
+        margin-bottom: 20px;
+    }
+    .nav{
+        order: 2;
+    }
+    .nav ul, .src{
+        justify-content: space-around;
+    }
+    .src{
+        order: 1;
+    }
+    .src a img{
+        margin-left: 0;
+    }
+    .logo{
+        order: 3;
+    }
+    .main{
+        margin-left: 20px;
+    }
+    .hero h2{
+        font-size: 1rem;
+        line-height: 1px;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .hero h3{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .hero-text p{
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .them-change, .lang-change{
+        justify-content: center;
+    }
+    .them-change{
+        order: 3;
+    }
+    .buy{
+        order: 1;
+    }
+    .lang-change{
+        order: 2;
+    }
+    .them-change input[type='checkbox']{
+        margin-right: 20px;
+    }
+}
